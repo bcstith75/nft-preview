@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+    color: #444444;
+}
+
+body {
+    background-color: var(--dark-blue-main);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 45px 0;
+}
+
+.card {
+    background-color: var(--dark-blue-card);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 380px;
+    gap: 18px;
+    border-radius: 8px;
+}
+
+.img {
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.card-text {
+    font-size: 18px;
+    color: var(--soft-blue);
+}
+
+.card-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid var(--dark-blue-line);
+}
+
+.card-data-left {
+    display: flex;
+    align-items: center;
+    color: var(--soft-blue);
+    font-weight: bold;
+    gap: 8px;
+}
+
+.card-data-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--soft-blue);
+}
+
+.card-bottom {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--soft-blue);
+}
+
+.card-bottom-text {
+    color: var(--white);
+}
+
+.img-avatar {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
